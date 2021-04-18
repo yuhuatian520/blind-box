@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hexin.techlonogy.mapper.InvitationInfoMapper">
+  <resultMap id="BaseResultMap" type="com.hexin.techlonogy.entity.InvitationInfo">
+    <!--@mbg.generated generated on Wed Apr 14 21:52:23 CST 2021.-->
+    <!--@Table invitation_info-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="inv_time" jdbcType="VARCHAR" property="invTime" />
+    <result column="inv_id" jdbcType="VARCHAR" property="invId" />
+    <result column="reward_id" jdbcType="INTEGER" property="rewardId" />
+    <result column="status" jdbcType="SMALLINT" property="status" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed Apr 14 21:52:23 CST 2021.-->
+    id, open_id, inv_time, inv_id, reward_id, `status`
+  </sql>
+</mapper>

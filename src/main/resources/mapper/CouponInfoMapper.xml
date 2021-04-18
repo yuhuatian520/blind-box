@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hexin.techlonogy.mapper.CouponInfoMapper">
+  <resultMap id="BaseResultMap" type="com.hexin.techlonogy.entity.CouponInfo">
+    <!--@mbg.generated generated on Wed Apr 14 21:52:13 CST 2021.-->
+    <!--@Table coupon_info-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="used" jdbcType="SMALLINT" property="used" />
+    <result column="type" jdbcType="SMALLINT" property="type" />
+    <result column="with_special" jdbcType="SMALLINT" property="withSpecial" />
+    <result column="with_sn" jdbcType="VARCHAR" property="withSn" />
+    <result column="with_amount" jdbcType="BIGINT" property="withAmount" />
+    <result column="used_amount" jdbcType="BIGINT" property="usedAmount" />
+    <result column="quota" jdbcType="INTEGER" property="quota" />
+    <result column="take_count" jdbcType="INTEGER" property="takeCount" />
+    <result column="used_count" jdbcType="INTEGER" property="usedCount" />
+    <result column="start_time" jdbcType="VARCHAR" property="startTime" />
+    <result column="end_time" jdbcType="VARCHAR" property="endTime" />
+    <result column="valid_type" jdbcType="SMALLINT" property="validType" />
+    <result column="valid_start_time" jdbcType="VARCHAR" property="validStartTime" />
+    <result column="valid_end_time" jdbcType="VARCHAR" property="validEndTime" />
+    <result column="valid_days" jdbcType="INTEGER" property="validDays" />
+    <result column="status" jdbcType="SMALLINT" property="status" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="update_time" jdbcType="VARCHAR" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed Apr 14 21:52:13 CST 2021.-->
+    id, title, icon, used, `type`, with_special, with_sn, with_amount, used_amount, quota, 
+    take_count, used_count, start_time, end_time, valid_type, valid_start_time, valid_end_time, 
+    valid_days, `status`, create_user, create_time, update_user, update_time
+  </sql>
+</mapper>
